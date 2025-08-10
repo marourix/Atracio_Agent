@@ -1,33 +1,47 @@
 {
-  "stock": {
-    "SKU123": {
-      "available_qty": 150,
-      "reserved_qty": 20,
-      "location": "Warehouse A"
+    "stock": {
+        "SKU123": {
+            "available_qty": 150,
+            "reserved_qty": 20,
+            "location": "Warehouse A"
+        },
+        "SKU456": {
+            "available_qty": 75,
+            "reserved_qty": 15,
+            "location": "Warehouse B"
+        },
+        "SKU789": {
+            "available_qty": 200,
+            "reserved_qty": 30,
+            "location": "Warehouse A"
+        }
     },
-    "SKU456": {
-      "available_qty": 75,
-      "reserved_qty": 15,
-      "location": "Warehouse B"
+    "orders": {
+        "ORD001": {
+            "status": "Shipped",
+            "eta": "2025-08-01"
+        },
+        "ORD002": {
+            "status": "Processing",
+            "eta": "2025-08-15"
+        },
+        "ORD003": {
+            "status": "Delivered",
+            "eta": "2025-07-25"
+        }
     },
-    "SKU789": {
-      "available_qty": 200,
-      "reserved_qty": 30,
-      "location": "Warehouse A"
+    "purchase_orders": {
+        "POE115A9": {
+            "sku": "SKU456",
+            "quantity": 50,
+            "status": "Pending",
+            "created_at": "2025-08-10 20:26:13"
+        },
+        "PO247EA3": {
+            "sku": "SKU456",
+            "quantity": 100,
+            "status": "Pending",
+            "created_at": "2025-08-10 20:27:00"
+        }
     }
-  },
-  "orders": {
-    "ORD001": {
-      "status": "Shipped",
-      "eta": "2025-08-01"
-    },
-    "ORD002": {
-      "status": "Processing",
-      "eta": "2025-08-15"
-    },
-    "ORD003": {
-      "status": "Delivered",
-      "eta": "2025-07-25"
-    }
-  }
 }
