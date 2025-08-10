@@ -15,7 +15,7 @@ This agent is used with fictive data to simulate basic ERP operations for Atraci
 | Tool Name             | Description                                      |
 |-----------------------|--------------------------------------------------|
 | `check_stock_level`   | Returns available and reserved quantity of SKU   |
-| `create_purchase_order` | Simulates creation of a purchase order         |
+| `create_purchase_order` | Simulates creation of a purchase order  and automatically adds it in `data.json`.|
 | `check_order_status`  | Returns the status and ETA of a given order      |
 
 ##  Mock Data
